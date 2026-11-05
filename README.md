@@ -26,7 +26,8 @@ The application follows an Agile-inspired workflow and provides a simple interfa
 ### Frontend
 - HTML
 - CSS
-- JavaScript
+- JavaScript 
+- Chart.js
 
 ### Backend
 - Python
@@ -53,7 +54,6 @@ AgileFlow/
 │   │   ├── routes.py
 │   │   ├── auth.py
 │   │   └── background.py
-│   ├── agileflow.db
 │   └── requirements.txt
 │
 ├── frontend/
@@ -65,6 +65,11 @@ AgileFlow/
 │   ├── script.js
 │   └── auth.js
 │
+├── docs/
+│   ├── api_documentation.md
+│   ├── architecture.md
+│   └── database_schema.md
+│
 └── README.md
 ```
 
@@ -73,7 +78,7 @@ AgileFlow/
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/ThrishaPulagam/AgileFlow.git
 cd AgileFlow
 ```
 
