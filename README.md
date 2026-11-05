@@ -27,7 +27,6 @@ The application follows an Agile-inspired workflow and provides a simple interfa
 - HTML
 - CSS
 - JavaScript
-- Chart.js
 
 ### Backend
 - Python
@@ -39,12 +38,12 @@ The application follows an Agile-inspired workflow and provides a simple interfa
 
 ### Database
 - SQLite
-- The SQLite database is initialized automatically by the backend when the application starts. The database file is excluded from version control and is created locally.
 
 ## 4. Project Structure
 
 ```text
 AgileFlow/
+│
 ├── backend/
 │   ├── app/
 │   │   ├── main.py
@@ -54,8 +53,9 @@ AgileFlow/
 │   │   ├── routes.py
 │   │   ├── auth.py
 │   │   └── background.py
-│   ├── check_database.py
+│   ├── agileflow.db
 │   └── requirements.txt
+│
 ├── frontend/
 │   ├── index.html
 │   ├── login.html
@@ -64,11 +64,7 @@ AgileFlow/
 │   ├── auth.css
 │   ├── script.js
 │   └── auth.js
-├── docs/
-│   ├── architecture.md
-│   ├── api_documentation.md
-│   └── database_schema.md
-├── .gitignore
+│
 └── README.md
 ```
 
@@ -77,7 +73,7 @@ AgileFlow/
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/ThrishaPulagam/AgileFlow.git
+git clone YOUR_GITHUB_REPOSITORY_URL
 cd AgileFlow
 ```
 
@@ -194,20 +190,8 @@ The application contains database models for:
 - Tasks
 - Team Members
 - Report Jobs
-  
-## 10. Additional Documentation
 
-Detailed project documentation is available in the `docs/` directory:
-
-- `architecture.md` – Application architecture and component interactions.
-- `database_schema.md` – Database tables and relationships.
-- `api_documentation.md` – API endpoints and request details.
-
-Interactive API documentation is also available through Swagger UI at:
-
-http://127.0.0.1:8000/docs
-
-## 11. Future Enhancements
+## 10. Future Enhancements
 
 - Role-based access control
 - Project ownership and user-specific data access
@@ -218,12 +202,12 @@ http://127.0.0.1:8000/docs
 - Durable background processing using Celery and Redis
 - Deployment to a cloud platform
 
-## 12. AI Usage
+## 11. AI Usage
 
 AI tools were used as development assistance for understanding concepts, debugging errors, improving code structure, and preparing documentation.
 
 The application was implemented, tested, and reviewed as part of the development process.
 
-## 13. Author
+## 12. Author
 
 Developed as a full-stack project management application for the KPIT assignment.
